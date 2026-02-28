@@ -1,5 +1,7 @@
-package model;
+package com.phuc.SWP391.model.entity;
 
+import com.phuc.SWP391.model.enums.EmergencyLevel;
+import com.phuc.SWP391.model.enums.RequestStatus;
 import jakarta.persistence.*;
 import lombok.Data;
     @Entity // Đánh dấu class này là bảng trong database

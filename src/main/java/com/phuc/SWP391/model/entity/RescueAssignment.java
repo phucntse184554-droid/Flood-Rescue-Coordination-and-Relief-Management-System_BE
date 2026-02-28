@@ -1,4 +1,4 @@
-package model;
+package com.phuc.SWP391.model.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;

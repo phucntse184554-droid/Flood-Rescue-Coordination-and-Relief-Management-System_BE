@@ -1,6 +1,6 @@
-package repository;
+package com.phuc.SWP391.repository;
 
-import model.RescueTeam;
+import com.phuc.SWP391.model.entity.RescueTeam;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

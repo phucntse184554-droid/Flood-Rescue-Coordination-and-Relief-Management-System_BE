@@ -1,6 +1,6 @@
-package repository;
+package com.phuc.SWP391.repository;
 
-import model.RescueAssignment;
+import com.phuc.SWP391.model.entity.RescueAssignment;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

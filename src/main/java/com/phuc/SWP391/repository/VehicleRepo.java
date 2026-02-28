@@ -1,6 +1,6 @@
-package repository;
+package com.phuc.SWP391.repository;
 
-import model.Vehicle;
+import com.phuc.SWP391.model.entity.Vehicle;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
