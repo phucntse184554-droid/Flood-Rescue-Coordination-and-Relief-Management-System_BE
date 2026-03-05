@@ -1,0 +1,18 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="RescueManagementApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+    <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$/../OpenJDK17U-jdk_x64_windows_hotspot_17.0.18_8/jdk-17.0.18+8" />
+    <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+    <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
+    <module name="SWP391" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="com.phuc.SWP391.RescueManagementApplication" />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="com.phuc.SWP391.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
