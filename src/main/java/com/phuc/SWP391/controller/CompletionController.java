@@ -1,16 +1,16 @@
 package com.phuc.SWP391.controller;
 
 import com.phuc.SWP391.model.RescueAssignment;
+import com.phuc.SWP391.service.CompleteMissionService;
 import org.springframework.web.bind.annotation.*;
-import com.phuc.SWP391.service.CoordinatorService;
 
 @RestController
 @RequestMapping("/missions")
 public class CompletionController {
 
-    private final CoordinatorService service;
+    private final CompleteMissionService service;
 
-    public CompletionController(CoordinatorService service) {
+    public CompletionController(CompleteMissionService service) {
         this.service = service;
     }
 

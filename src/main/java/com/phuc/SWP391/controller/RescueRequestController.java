@@ -2,16 +2,16 @@ package com.phuc.SWP391.controller;
 
 import com.phuc.SWP391.model.EmergencyLevel;
 import com.phuc.SWP391.model.RescueRequest;
+import com.phuc.SWP391.service.VerifyRequestService;
 import org.springframework.web.bind.annotation.*;
-import com.phuc.SWP391.service.CoordinatorService;
 
 @RestController
 @RequestMapping("/requests")
 public class RescueRequestController {
 
-    private final CoordinatorService service;
+    private final VerifyRequestService service;
 
-    public RescueRequestController(CoordinatorService service) {
+    public RescueRequestController(VerifyRequestService service) {
         this.service = service;
     }
 
