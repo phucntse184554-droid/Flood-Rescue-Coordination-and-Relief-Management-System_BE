@@ -1,14 +1,14 @@
 package com.phuc.SWP391.repository;
 
-import com.phuc.SWP391.model.RescueRequest;
+import com.phuc.SWP391.model.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.stereotype.Repository;
 
-import java.util.List;
+import java.util.Optional;
 
-@Repository
 @EnableJpaRepositories
-public interface RescueRequestRepo extends JpaRepository<RescueRequest, Long> {
-    List<RescueRequest> findByCitizenId(Long userId);
+@Repository
+public interface RoleRepo extends JpaRepository<Role, Long> {
+    Optional<Role> findByName(String name);
 }

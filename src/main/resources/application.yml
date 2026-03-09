@@ -3,16 +3,50 @@ spring:
     name: SWP391
 
   datasource:
-    url: jdbc:sqlserver://localhost:1433;databaseName=SWP391;encrypt=false
-    username: sa
-    password: ${PASSWORD_DB}
-    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:mysql://localhost:3307/swp391
+    username: root
+    password: 12345
 
   jpa:
-    database-platform: org.hibernate.dialect.SQLServerDialect
-    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        format_sql: true
     hibernate:
       ddl-auto: update
+    show-sql: false
 
-server:
-  port: 8080
+logging:
+  level:
+    org.springframework.security: DEBUG
+
+app:
+  jwt-secret: 186e4b79e23b663a99f7824f3c48066c517258bbaa8237d45fec6b31e0cca51b
+  jwt-access-expiration-milliseconds: 864000000
+  jwt-refresh-expiration-milliseconds: 2592000000
+
+
+# spring:
+#   application:
+#     name: SWP391
+
+#   datasource:
+#     url: jdbc:sqlserver://localhost:1433;databaseName=SWP391;encrypt=false
+#     username: sa
+#     password: ${PASSWORD_DB}
+#     driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+
+#   jpa:
+#     database-platform: org.hibernate.dialect.SQLServerDialect
+#     show-sql: true
+#     hibernate:
+#       ddl-auto: update
+
+# server:
+#   port: 8080
+
+# jwt:
+#   secret: ${JWT_SECRET:SecretKey12345}
+#   expirationMs: 3600000
+#   refreshExpirationMs: 2592000000
+

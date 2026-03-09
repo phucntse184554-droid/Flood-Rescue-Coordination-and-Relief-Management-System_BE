@@ -1,30 +1,26 @@
-package com.phuc.SWP391.model;
+package com.phuc.SWP391.model.dto;
 
-import jakarta.persistence.*;
+import com.phuc.SWP391.model.EmergencyLevel;
+import com.phuc.SWP391.model.RequestStatus;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
-
-@Entity
-@Table(name = "RescueRequest")
 @Data
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class RescueRequest {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class RescueRequestResponse {
     private Long id;
-
-    @ManyToOne(fetch = FetchType.LAZY)
-    private User citizen;
+    private UserResponse citizen;
     private String location;
     private String description;
-
     @Enumerated(EnumType.STRING)
     private EmergencyLevel emergencyLevel;
-
     @Enumerated(EnumType.STRING)
     private RequestStatus status;
     private LocalDateTime createdAt;
